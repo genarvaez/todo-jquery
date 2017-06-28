@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Foro Bunny</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+					    <div class="nav-wrapper">
+					      <a href="#!" class="brand-logo"><i class="fa fa-pencil-square" aria-hidden="true"></i>TagTarea</a>
+					      <ul class="right hide-on-med-and-down">
+					        <li><i class="fa fa-search " aria-hidden="true"></i></li>
+					        <li><input type="text" placeholder="Search tarea"></li>
+					      </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row center-align">
+				<div class="col offset-s2 s8 content">
+					<input type="text" placeholder="Add tarea" id="tarea">
+					<button id="boton"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="row center-align">
+		<div class="list col s6">
+			<h1>To do list</h1>
+			<ul></ul>
+		</div>
+		<div class="completed col s6">
+			<h1>Completed</h1>
+			<ul></ul>
+		</div>
+		</div>
+	</section>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
