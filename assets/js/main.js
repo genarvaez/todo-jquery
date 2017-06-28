@@ -13,7 +13,6 @@ $(document).ready(function(){
 
 
 		}
-
 		$(".remove").click(function(){
 		$(this).siblings().remove();
 		this.remove();
@@ -22,4 +21,4 @@ $(document).ready(function(){
 	})
 
 
-})
+}) 
