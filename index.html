@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Permanent+Marker" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -30,8 +31,14 @@
 		<div class="container">
 			<div class="row center-align">
 				<div class="col offset-s2 s8 content">
-					<input type="text" placeholder="Add tarea" id="tarea">
-					<button id="boton"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
+					<ul class="collapsible popout" data-collapsible="accordion">
+					 	<li>
+					 		<div class="collapsible-header"><button id="boton"><i class="fa fa-plus fa-2x" aria-hidden="true"></div></i></button>
+					 		<div class="collapsible-body">
+					 			<input type="text" placeholder="Add tarea" id="tarea"><i class="fa fa-paper-plane-o fa-2x" aria-hidden="true"></i>
+					 		</div>
+					 	</li>
+					</ul>					
 				</div>
 			</div>
 		</div>

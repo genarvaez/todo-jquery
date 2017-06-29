@@ -1,6 +1,8 @@
 $(document).ready(function(){
-	$("#boton").click(function(e){
+	$(".fa-paper-plane-o").click(function(e){
 		e.preventDefault();
+		$('.collapsible').collapsible();
+
 		var tarea = $("#tarea").val();
 		var completed = $(".completed");
 		var date = new Date();
@@ -9,7 +11,7 @@ $(document).ready(function(){
 			alert("El campo no puede estár vacío");
 		}
 		else{
-			$(".list").append("<li><input type='checkbox' id='myCheckbox' class=filled-in' /><label  for='myCheckbox'></label>" +
+			$(".list").append("<li class='link'><input type='checkbox'>" +
 			"<span id='tareas'>" + tarea+"</span><span class='onHover'>"+date.getDate() + '/' + (date.getMonth() +1) + '/' + date.getFullYear() +"</span>"+ 
 			"<button class='remove'><i class='fa fa-trash-o' aria-hidden='true'></i></button></li>");
 			$("#tarea").val("");
@@ -20,13 +22,15 @@ $(document).ready(function(){
 		})
 
 
+		
 		$('[type="checkbox"]').change(function(){
-	    	if(this.checked){
-	    		completed.append($(this).parent());
-	    	}
-	    	else{
-	    		$(".list").append($(this).parent());
-	    	}
- 		});
+			if ($(this).prop("checked")){
+		        completed.append($(this).parent())
+		        
+		    }
+		   	else{
+		       	$(".list").append($(this).parent());
+		    }
+		});
 	})
 }) 	

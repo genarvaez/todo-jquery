@@ -7,7 +7,10 @@
 i{
 	margin: 0 30px;
 	color: white;
-
+	cursor: pointer;
+}
+.fa-plus{
+	margin: 0 10px;
 }
 .nav-wrapper a{
 	font-family: 'Permanent Marker', cursive;
@@ -25,8 +28,9 @@ input::-webkit-input-placeholder {
 }
 #boton{
 	border-radius: 100%;
-	margin: 10px;
-	height: 60px;
+	margin: 10px 0;
+	height: 50px;
+	width: 50px;
 	background-color: #04B4AE;
 	border: none;
 }
@@ -36,20 +40,18 @@ input::-webkit-input-placeholder {
 }
 
 h1{
-	font-size: 2.8em
+	font-size: 2.8em;
+	font-family: 'Patrick Hand SC', cursive;
 }
 
 li{
 	list-style: none;
-	font-family: 'Patrick Hand SC', cursive;
-	font-size: 2em;
 }
-li:hover{
+.link:hover{
 	background-color: #04B4AE;
 	box-shadow: 10px 10px 5px 0px rgba(224,215,222,1);
 	border-radius: 5px;
 }
-
 
 .onHover{
 	color: white;
@@ -60,4 +62,15 @@ li:hover{
 	color: red;
 	border: none;
 }
+.link{
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 2em;
+}
 
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    left: 10px;
+    opacity: 1;
+    margin: 20px;
+}
