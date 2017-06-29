@@ -27,7 +27,7 @@ input::-webkit-input-placeholder {
 	border-radius: 100%;
 	margin: 10px;
 	height: 60px;
-	background-color: #FA5858;
+	background-color: #04B4AE;
 	border: none;
 }
 .prueba input{
@@ -35,19 +35,29 @@ input::-webkit-input-placeholder {
 
 }
 
-[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-	position: relative;
-	left: 0;
-	opacity: 1;
+h1{
+	font-size: 2.8em
 }
 
 li{
 	list-style: none;
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 2em;
 }
-.mas{
-	position: fixed;
-	top: 63px;
-	border: none;
-	background-color: red;
+li:hover{
+	background-color: #04B4AE;
+	box-shadow: 10px 10px 5px 0px rgba(224,215,222,1);
+	border-radius: 5px;
+}
 
+
+.onHover{
+	color: white;
+	margin: 30px;
 }
+.remove{
+	background-color: transparent;
+	color: red;
+	border: none;
+}
+
