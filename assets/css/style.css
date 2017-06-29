@@ -36,7 +36,6 @@ input::-webkit-input-placeholder {
 }
 .prueba input{
 	color: black;
-
 }
 
 h1{
@@ -46,6 +45,10 @@ h1{
 
 li{
 	list-style: none;
+}
+h1:hover{
+	background-color: #04B4AE;
+	color: white;
 }
 .link:hover{
 	background-color: #04B4AE;
@@ -64,9 +67,8 @@ li{
 }
 .link{
 	font-family: 'Patrick Hand SC', cursive;
-	font-size: 2em;
+	font-size: 2rem;
 }
-
 
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
     position: relative;

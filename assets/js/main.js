@@ -26,7 +26,6 @@ $(document).ready(function(){
 		$('[type="checkbox"]').change(function(){
 			if ($(this).prop("checked")){
 		        completed.append($(this).parent())
-		        
 		    }
 		   	else{
 		       	$(".list").append($(this).parent());
